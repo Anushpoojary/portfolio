@@ -152,8 +152,9 @@ const AboutSection = () => {
               )}
               <div className="flex justify-center md:justify-start md:ml-40 md:mt-12 mt-8">
                 <a
-                  href="/resume___.pdf"
-                  download="Anush_Resume.pdf"
+                  href="/portfolio/resume___.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-md flex items-center gap-2 w-fit"
                 >
                   <FileText className="w-4 h-4" /> Get my Resume

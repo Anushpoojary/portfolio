@@ -168,13 +168,17 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center px-4 sm:px-0">
-              <button className="bg-white text-purple-600 px-6 xs:px-8 py-2.5 xs:py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition-opacity duration-300 flex items-center gap-2 w-full xs:w-auto justify-center">
-                <span className="text-purple-600 font-bold">&lt;/&gt;</span>
-                <span className="text-purple-600">View My Work</span>
-              </button>
-              <button className="border-2 border-white text-white px-6 xs:px-8 py-2.5 xs:py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300 w-full xs:w-auto">
-                Get In Touch
-              </button>
+              <a href="#projects">
+                <button className="bg-white text-purple-600 px-6 xs:px-8 py-2.5 xs:py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition-opacity duration-300 flex items-center gap-2 w-full xs:w-auto justify-center">
+                  <span className="text-purple-600 font-bold">&lt;/&gt;</span>
+                  <span className="text-purple-600">View My Work</span>
+                </button>
+              </a>
+              <a href="#contact">
+                <button className="border-2 border-white text-white px-6 xs:px-8 py-2.5 xs:py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300 w-full xs:w-auto">
+                  Get In Touch
+                </button>
+              </a>
             </div>
           </div>
 
@@ -193,25 +197,25 @@ export default function HeroSection() {
               {/* Social Icons */}
               <div className="flex gap-3 xs:gap-4 mt-4 sm:mt-6 text-lg xs:text-xl justify-center md:justify-start md:ml-20">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/anush_poojary49?igsh=b2J3ZnVhbTJnbXVy&utm_source=qr"
                   className="hover:text-pink-400 transition-colors duration-200"
                 >
                   <FaInstagram size={20} className="xs:w-6 xs:h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/anush-587a062a2"
                   className="hover:text-blue-500 transition-colors duration-200"
                 >
                   <FaLinkedin size={20} className="xs:w-6 xs:h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Anushpoojary"
                   className="hover:text-gray-400 transition-colors duration-200"
                 >
                   <FaGithub size={20} className="xs:w-6 xs:h-6" />
                 </a>
                 <a
-                  href="mailto:someone@example.com"
+                  href="mailto:anushajarkateel@gmail.com"
                   className="hover:text-red-400 transition-colors duration-200"
                 >
                   <FaEnvelope size={20} className="xs:w-6 xs:h-6" />

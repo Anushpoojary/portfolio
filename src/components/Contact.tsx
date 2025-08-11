@@ -106,7 +106,11 @@ export default function ContactSection() {
                     </a> */}
                   </div>
                   <div className="mt-4">
-                    <a href="/resume___.pdf" download="Anush_Resume.pdf">
+                    <a
+                      href="/portfolio/resume___.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <button className="px-3 py-1 bg-[#1E90FF] text-white text-sm rounded-md shadow-md transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#1C86EE] hover:shadow-lg flex items-center">
                         <FaDownload className="mr-1" size={12} /> Get my Resume
                       </button>
