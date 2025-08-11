@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { GraduationCap, Briefcase, BookOpen, FileText } from "lucide-react";
 
 interface TimelineItem {
