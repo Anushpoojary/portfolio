@@ -29,8 +29,6 @@ export default function HeroSection() {
   const [angle, setAngle] = useState(0);
   const [hasMounted, setHasMounted] = useState(false);
 
-  const letters = "PORTFOLIO".split("");
-
   const typedRef = useRef(null);
 
   useEffect(() => {
