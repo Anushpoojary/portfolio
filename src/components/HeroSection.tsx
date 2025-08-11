@@ -143,7 +143,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,_rgba(255,255,255,0.05)_0px,_rgba(255,255,255,0.05)_1px,_transparent_1px,_transparent_20px)] scale-[2] mx-auto z-0" />
 
         {/* Watermark text */}
-        <h1 className="absolute top-[3%] sm:top-[5%] left-1/2 transform -translate-x-1/2 text-[1.8rem] xs:text-[2.2rem] sm:text-[4rem] md:text-[7rem] font-bold text-white/10 tracking-widest z-10 mt-10">
+        <h1 className="absolute top-[3%] sm:top-[5%] left-1/2 transform -translate-x-1/2 text-[1.8rem] xs:text-[2.2rem] sm:text-[4rem] md:text-[7rem] font-bold text-white/15 tracking-widest z-10 mt-10">
           {" "}
           PORTFOLIO{" "}
         </h1>
