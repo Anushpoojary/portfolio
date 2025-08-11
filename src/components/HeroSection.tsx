@@ -2,21 +2,50 @@ import { useEffect, useState, useRef } from "react";
 import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import Typed from "typed.js";
 
-// Rotating icon images
+import main from "/MAIN.png";
+import img2 from "/image 2.png";
+import wix from "/Wix.png";
+import img4 from "/image 4.png";
+import img5 from "/image 5.png";
+import img6 from "/image 6.png";
+import img7 from "/image 7.png";
+import img8 from "/image 8.png";
+import img9 from "/image 9.png";
+import img10 from "/image 10.png";
+import img11 from "/image 11.png";
+import img12 from "/image 12.png";
+import img13 from "/image 13.png";
+
 const rotatingImages: string[] = [
-  "/image 2.png",
-  "/Wix.png",
-  "/image 4.png",
-  "/image 5.png",
-  "/image 6.png",
-  "/image 7.png",
-  "/image 8.png",
-  "/image 9.png",
-  "/image 10.png",
-  "/image 11.png",
-  "/image 12.png",
-  "/image 13.png",
+  img2,
+  wix,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
 ];
+
+// Rotating icon images
+// const rotatingImages: string[] = [
+//   "/image 2.png",
+//   "/Wix.png",
+//   "/image 4.png",
+//   "/image 5.png",
+//   "/image 6.png",
+//   "/image 7.png",
+//   "/image 8.png",
+//   "/image 9.png",
+//   "/image 10.png",
+//   "/image 11.png",
+//   "/image 12.png",
+//   "/image 13.png",
+// ];
 
 export const scrollToSection = (sectionId: string) => {
   const section = document.getElementById(sectionId);
@@ -155,7 +184,7 @@ export default function HeroSection() {
             <div className="-translate-x-12 md:translate-x-40">
               <div className="relative z-10 -mt-4 xs:-mt-6 sm:-mt-8 md:mt-0">
                 <img
-                  src="/MAIN.png"
+                  src={main}
                   alt="Profile"
                   className="rounded-xl w-[140px] h-[180px] xs:w-[160px] xs:h-[200px] sm:w-[180px] sm:h-[240px] md:w-[280px] md:h-[360px] object-cover"
                 />

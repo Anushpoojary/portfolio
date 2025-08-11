@@ -1,5 +1,8 @@
 import { FaGlobe } from "react-icons/fa";
 
+import figma from "/image 2 (1).png";
+import github from "/GitHub.png";
+
 const projects = [
   {
     title: "Quantum Computing Simulator",
@@ -83,7 +86,7 @@ export default function ProjectsSection() {
                     title="View Figma Design"
                   >
                     <img
-                      src="/image 2 (1).png"
+                      src={figma}
                       alt="Figma"
                       className="md:w-20 md:h-10 w-32 h-10"
                     />
@@ -97,7 +100,7 @@ export default function ProjectsSection() {
                     title="View GitHub Repo"
                   >
                     <img
-                      src="/GitHub.png"
+                      src={github}
                       alt="GitHub"
                       className="md:w-20 md:h-10 w-32 h-10"
                     />

@@ -1,26 +1,44 @@
+import image2 from "/image 2.png";
+import image7 from "/image 7.png";
+import wix from "/Wix.png";
+import image6 from "/image 6.png";
+import image4 from "/image 4.png";
+import image5 from "/image 5.png";
+import js from "/js.png";
+import html from "/html.png";
+import image9 from "/image 9.png";
+import bootstrap from "/bootstrap.png";
+import image8 from "/image 8.png";
+import image10 from "/image 10.png";
+import git from "/git.png";
+import css from "/css.png";
+import sass from "/sass.png";
+import image15 from "/image 15.png";
+import c from "/c.png";
+
 interface Skill {
   name: string;
   src: string;
 }
 
 const skills: Skill[] = [
-  { name: "FIGMA", src: "/image 2.png" },
-  { name: "REACT", src: "/image 7.png" },
-  { name: "WIX STUDIO", src: "/Wix.png" },
-  { name: "DORA", src: "/image 6.png" },
-  { name: "FRAMER", src: "/image 4.png" },
-  { name: "RIVE", src: "/image 5.png" },
-  { name: "JAVASCRIPT", src: "/js.png" },
-  { name: "HTML5", src: "/html.png" },
-  { name: "FIREBASE", src: "/image 9.png" },
-  { name: "BOOTSTRAP", src: "/bootstrap.png" },
-  { name: "MONGODB", src: "/image 8.png" },
-  { name: "EXPRESS", src: "/image 10.png" },
-  { name: "GIT", src: "/git.png" },
-  { name: "CSS3", src: "/css.png" },
-  { name: "SASS", src: "/sass.png" },
-  { name: "JAVA", src: "/image 15.png" },
-  { name: "C", src: "/c.png" },
+  { name: "FIGMA", src: image2 },
+  { name: "REACT", src: image7 },
+  { name: "WIX STUDIO", src: wix },
+  { name: "DORA", src: image6 },
+  { name: "FRAMER", src: image4 },
+  { name: "RIVE", src: image5 },
+  { name: "JAVASCRIPT", src: js },
+  { name: "HTML5", src: html },
+  { name: "FIREBASE", src: image9 },
+  { name: "BOOTSTRAP", src: bootstrap },
+  { name: "MONGODB", src: image8 },
+  { name: "EXPRESS", src: image10 },
+  { name: "GIT", src: git },
+  { name: "CSS3", src: css },
+  { name: "SASS", src: sass },
+  { name: "JAVA", src: image15 },
+  { name: "C", src: c },
 ];
 
 export default function SkillsGrid() {
@@ -37,10 +55,8 @@ export default function SkillsGrid() {
   const fullRowSkillsMobile = skills.slice(0, fullRowsMobile);
   const lastRowSkillsMobile = skills.slice(fullRowsMobile);
 
-  // 🔹 Reusable Skill Item with hover text above
   const SkillItem = ({ skill, size }: { skill: Skill; size: string }) => (
     <div className="relative flex flex-col items-center group">
-      {/* Icon */}
       <div
         className={`${size} mx-auto mb-4 transition-all duration-300 transform group-hover:scale-130 group-hover:opacity-100`}
       >
@@ -50,8 +66,6 @@ export default function SkillsGrid() {
           className="object-contain w-full h-full"
         />
       </div>
-
-      {/* Hover Text Above */}
       <span className="absolute bottom-16 md:bottom-24 opacity-0 group-hover:opacity-100 group-hover:-translate-y-3 transition-all duration-300 text-emerald-400 text-xs md:text-sm font-semibold bg-black/80 px-3 py-1 rounded-md shadow-lg">
         {skill.name}
       </span>
@@ -61,20 +75,18 @@ export default function SkillsGrid() {
   return (
     <section className="bg-black text-white py-20 px-4" id="skills">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-2">Skills</h2>
           <div className="w-20 h-1 bg-orange-500 rounded"></div>
         </div>
 
-        {/* Mobile View */}
+        {/* Mobile */}
         <div className="md:hidden">
           <div className="grid grid-cols-3 gap-8 mb-8">
             {fullRowSkillsMobile.map((skill) => (
               <SkillItem key={skill.name} skill={skill} size="w-16 h-16" />
             ))}
           </div>
-
           {lastRowSkillsMobile.length > 0 && (
             <div className="flex justify-center gap-8 flex-wrap">
               {lastRowSkillsMobile.map((skill) => (
@@ -84,14 +96,13 @@ export default function SkillsGrid() {
           )}
         </div>
 
-        {/* Desktop View */}
+        {/* Desktop */}
         <div className="hidden md:block">
           <div className="grid grid-cols-6 gap-12 mb-12">
             {fullRowSkillsDesktop.map((skill) => (
               <SkillItem key={skill.name} skill={skill} size="w-20 h-20" />
             ))}
           </div>
-
           {lastRowSkillsDesktop.length > 0 && (
             <div className="flex justify-center gap-32 flex-wrap">
               {lastRowSkillsDesktop.map((skill) => (
