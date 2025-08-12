@@ -127,7 +127,7 @@ export default function HeroSection() {
             <img
               src={src}
               alt={`icon-${i}`}
-              className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-contain"
+              className="w-[4rem] h-[4rem]  object-contain"
             />
           </div>
         );
@@ -143,13 +143,13 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,_rgba(255,255,255,0.05)_0px,_rgba(255,255,255,0.05)_1px,_transparent_1px,_transparent_20px)] scale-[2] mx-auto z-0" />
 
         {/* Watermark text */}
-        <h1 className="absolute top-[3%] sm:top-[5%] left-1/2 transform -translate-x-1/2 text-[1.8rem] xs:text-[2.2rem] sm:text-[4rem] md:text-[7rem] font-bold text-white/15 tracking-widest z-10 mt-10">
+        <h1 className="absolute top-[4rem] sm:top-[5%] left-1/2 transform -translate-x-1/2 text-[2rem] xs:text-[3rem] sm:text-[4rem] md:text-[5rem] font-bold text-white/15 tracking-widest z-10 mt-10">
           {" "}
           PORTFOLIO{" "}
         </h1>
 
         {/* Main Content */}
-        <div className="relative z-20 flex flex-col items-center justify-center w-full max-w-6xl pt-16 sm:pt-20 md:pt-36 gap-6 md:flex-row">
+        <div className="relative w-[90%] z-20 flex flex-col items-center justify-center   pt-16 sm:pt-20 md:pt-36 gap-6 md:flex-row">
           {/* Left side */}
           <div className="text-center md:text-left mb-8 sm:mb-14 md:mt-20 flex-1 order-2 md:order-1 px-2">
             <h2 className="text-3xl xs:text-4xl sm:text-4xl md:text-5xl font-bold text-center text-white tracking-wide leading-tight">
@@ -160,7 +160,7 @@ export default function HeroSection() {
               ref={typedRef}
             ></span>
 
-            <p className="mt-4 sm:mt-6 text-gray-300 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto text-center leading-relaxed text-sm xs:text-base sm:text-base md:text-lg px-4 sm:px-2">
+            <p className="mt-4 sm:mt-6 text-gray-300 w-11/12  mx-auto text-center leading-relaxed text-sm xs:text-base sm:text-base md:text-lg px-4 sm:px-2">
               UI/UX Designer & Full-stack Developer! craft beautiful,
               responsive, and user-friendly web applications. With a passion for
               clean code and innovative design, I bring ideas to life in the
@@ -185,15 +185,20 @@ export default function HeroSection() {
           {/* Right side */}
           <div className="flex-1 relative order-1 md:order-2 flex flex-col items-center md:items-start">
             {/* Image + Social icons wrapper → moves only in desktop */}
-            <div className="-translate-x-12 md:translate-x-40">
-              <div className="relative z-10 -mt-4 xs:-mt-6 sm:-mt-8 md:mt-0">
+            <div className="">
+              <div className="relative z-10  mt-30">
                 <img
                   src={main}
                   alt="Profile"
-                  className="rounded-xl w-[140px] h-[180px] xs:w-[160px] xs:h-[200px] sm:w-[180px] sm:h-[240px] md:w-[280px] md:h-[360px] object-cover"
+                  className="rounded-xl md:w-[15rem] w-[10rem]  object-cover"
                 />
+                 <div className=" absolute md:w-[10rem] w-[5rem] right-[-15rem] z-20 h-full md:right-[-20rem] top-0">
+              {hasMounted && (
+                <div className="absolute inset-0">{rotatingIcons}</div>
+              )}
+            </div>  
               </div>
-
+             
               {/* Social Icons */}
               <div className="flex gap-3 xs:gap-4 mt-4 sm:mt-6 text-lg xs:text-xl justify-center md:justify-start md:ml-20">
                 <a
@@ -224,20 +229,11 @@ export default function HeroSection() {
             </div>
 
             {/* Rotating Icons → unaffected */}
-            <div className="hidden md:block absolute w-full h-full left-[420px] top-0">
-              {hasMounted && (
-                <div className="absolute inset-0">{rotatingIcons}</div>
-              )}
-            </div>
+           
           </div>
         </div>
 
-        {/* Mobile Floating Animation */}
-        <div className="absolute -right-20 xs:-right-24 sm:-right-28 top-[240px] xs:top-[260px] sm:top-[280px] -translate-y-1/2 w-[140px] h-[140px] xs:w-[150px] xs:h-[150px] sm:w-[160px] sm:h-[160px] z-10 md:hidden">
-          {hasMounted && (
-            <div className="absolute inset-0 ml-1 xs:ml-2">{rotatingIcons}</div>
-          )}
-        </div>
+       
       </section>
     </div>
   );

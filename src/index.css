@@ -3,3 +3,8 @@
 body {
   overscroll-behavior: none;
 }
+@media screen and (max-width:1400px){
+  html{
+    font-size: 13px;
+  }
+}

@@ -14,7 +14,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-6xl transition-all duration-300">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%]  transition-all duration-300">
       <nav
         className={`px-6 py-3 rounded-full flex justify-between items-center shadow-md transition-all duration-300 ${
           isScrolled

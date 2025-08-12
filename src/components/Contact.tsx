@@ -50,7 +50,7 @@ export default function ContactSection() {
       className="py-20 bg-black text-white relative overflow-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="w-[90%] mx-auto">
           <div className="flex align-middle justify-center">
             <h2 className="text-4xl font-bold mb-8">
               Let's <span className="text-orange-500">Connect</span>

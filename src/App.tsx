@@ -11,11 +11,11 @@ import "./animations/AnimateOnScroll";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
       <MobileNavBar />
       <Navbar />
       <HeroSection />
-      <section id="about">
+      <section id="about" >
         <AboutSection />
       </section>
       <SkillsGrid />
@@ -26,7 +26,7 @@ const App: React.FC = () => {
         <Contact />
       </section>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -49,7 +49,7 @@ const MobileNavBar = () => {
   }, []);
 
   return (
-    <div className="w-screen flex items-center justify-center md:hidden">
+    <div className="w-[90%] flex items-center justify-center md:hidden">
       <div
         className={`h-10 bg-gradient-to-r from-[#0c0f19] via-[#1a1d2a] to-[#2a2e42] fixed bottom-10 z-10 w-80 flex justify-between items-center px-4 rounded-md border-[#4b5563] border-2 shadow-[0_4px_10px_rgba(75,85,99,0.7)] transition-transform duration-500 ${
           showNav ? "translate-y-0" : "translate-y-20"

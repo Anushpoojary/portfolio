@@ -74,7 +74,7 @@ export default function SkillsGrid() {
 
   return (
     <section className="bg-black text-white py-20 px-4" id="skills">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-[90%] mx-auto">
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-2">Skills</h2>
           <div className="w-20 h-1 bg-orange-500 rounded"></div>
@@ -113,7 +113,7 @@ export default function SkillsGrid() {
         </div>
 
         <div className="mt-20 text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8  mx-auto">
             <StatBox
               value={`${skills.length}+`}
               label="Technologies"

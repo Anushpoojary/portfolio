@@ -112,7 +112,7 @@ const AboutSection = () => {
 
   return (
     <section ref={sectionRef} id="about" className="bg-black text-white py-2">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="w-[90%] mx-auto px-4">
         <h2 className="text-4xl font-bold mb-10 reveal">
           About <span className="text-orange-500">Me</span>
           <div className="h-1 w-20 bg-orange-400 mt-1" />
